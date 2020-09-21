@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 import Modal from '../../components/UI/Modal/Modal';
 
 const withErrorHandler = ( WrapperComponent, axios ) => {
-    console.log(axios);
-
     return class extends Component {
         state = {
             error: null
@@ -21,7 +19,6 @@ const withErrorHandler = ( WrapperComponent, axios ) => {
         }
 
         componentWillUnmount() {
-            console.log('asdasds', this.reqInterceptor, this.resInterceptor)
             axios.interceptors.request.eject(this.reqInterceptor);
             axios.interceptors.response.eject(this.resInterceptor);
         }
