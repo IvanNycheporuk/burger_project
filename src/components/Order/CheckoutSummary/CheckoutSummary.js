@@ -6,7 +6,6 @@ import Button from '../../UI/Button/Button';
 import classes from './CheckoutSummary.module.css';
 
 const CheckoutSummary = ({ ingredients, checkoutCancelled, checkoutContinued }) => {
-    console.log(ingredients)
     return (
         <div className={ classes.CheckoutSummary }>
             <h1>Hope you'll like it</h1>

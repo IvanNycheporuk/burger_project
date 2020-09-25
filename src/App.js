@@ -65,4 +65,4 @@ const mapDispathToProps = dispatch => ({
 })
 
 
-export default withRouter(connect(mapStateToProps, mapDispathToProps)(App));
+export default connect(mapStateToProps, mapDispathToProps)(App);
